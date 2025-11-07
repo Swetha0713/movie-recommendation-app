@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Movie Recommendation Web App - V1</title>
+  <style>
+    body { font-family: system-ui, Arial; margin: 2rem; background:#0f172a; color:#e5e7eb; }
+    h1 { color:#38bdf8; }
+    input, button { padding:0.5rem; margin-right:0.5rem; }
+    #results { margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:1rem; }
+    .card {
+      background:#111827; padding:0.75rem; border-radius:8px;
+      width:200px; box-shadow:0 2px 6px rgba(0,0,0,0.4);
+    }
+    .card img { width:100%; border-radius:4px; }
+    .meta { font-size:0.8rem; color:#9ca3af; }
+  </style>
+</head>
+<body>
+  <h1>🎬 Movie Explorer (Version 1)</h1>
+  <p>Search movies using OMDb API.</p>
+
+  <input id="searchInput" placeholder="Enter movie title..." />
+  <button onclick="searchMovies()">Search</button>
+
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
